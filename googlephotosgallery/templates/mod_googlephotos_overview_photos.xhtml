@@ -1,0 +1,7 @@
+<section class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+    <h2><?php echo $this->headline; ?> <span style="font-size:80%;" class="back">(<a href="<?php echo $this->backlink; ?>">Übersicht</a>)</span></h2>
+    <div class="photos">
+        <?php foreach($this->articles as $article) echo $article; ?>
+        <div class="clear"></div>
+    </div>
+</section> 

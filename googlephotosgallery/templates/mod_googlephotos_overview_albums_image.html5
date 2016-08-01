@@ -1,0 +1,5 @@
+<div class="<?php echo $this->class; ?> image block" <?php echo $this->cssID; ?> <?php if ($this->style): ?> style="<?php echo $this->style; ?>" <?php endif; ?>>
+    <a href="<?php echo $this->link; ?>" title="<?php echo $this->title; ?>"><?php echo $this->image; ?></a>
+    <p class="name"><?php echo $this->title; ?></p>
+    <p class="info"><time datetime="<?php echo $this->datetime; ?>"><?php echo $this->date; ?></time> / <span><?php echo $this->numphotos; ?> Bilder</span></p>
+</div>

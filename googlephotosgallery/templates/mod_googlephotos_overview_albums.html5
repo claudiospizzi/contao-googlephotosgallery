@@ -1,0 +1,9 @@
+<section class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+    <?php foreach($this->categories as $category): ?>
+    <h2><?php echo $category['headline']; ?></h2>
+    <div class="albums">
+        <?php foreach($category['articles'] as $article) echo $article; ?>
+        <div class="clear"></div>
+    </div>
+    <?php endforeach; ?>
+</section>

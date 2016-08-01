@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>googlephotosgallery</Name>
+    <ProjectGuid>{a82252d3-057c-4080-9bd8-bc378b938a86}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="googlephotosgallery\" />
+    <Folder Include="googlephotosgallery\config\" />
+    <Folder Include="googlephotosgallery\dca\" />
+    <Folder Include="googlephotosgallery\languages\" />
+    <Folder Include="googlephotosgallery\languages\de\" />
+    <Folder Include="googlephotosgallery\languages\en\" />
+    <Folder Include="googlephotosgallery\libraries\" />
+    <Folder Include="googlephotosgallery\assets\" />
+    <Folder Include="googlephotosgallery\modules\" />
+    <Folder Include="googlephotosgallery\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="googlephotosgallery\assets\.htaccess" />
+    <Content Include="googlephotosgallery\config\autoload.ini" />
+    <Content Include="googlephotosgallery\assets\googlephotos.png" />
+    <Content Include="googlephotosgallery\assets\update.png" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_latest_image.html5" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_latest_image.xhtml" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_overview_photos_image.html5" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_overview_photos_image.xhtml" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_overview_albums_image.html5" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_overview_albums_image.xhtml" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_overview_albums.html5" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_overview_albums.xhtml" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_overview_photos.html5" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_overview_photos.xhtml" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_latest.html5" />
+    <Content Include="googlephotosgallery\templates\mod_googlephotos_latest.xhtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="googlephotosgallery\config\autoload.php" />
+    <Compile Include="googlephotosgallery\config\config.php" />
+    <Compile Include="googlephotosgallery\dca\tl_module.php" />
+    <Compile Include="googlephotosgallery\dca\tl_googlephotosgallery.php" />
+    <Compile Include="googlephotosgallery\dca\tl_googlephotosgallery_album.php" />
+    <Compile Include="googlephotosgallery\languages\de\default.php" />
+    <Compile Include="googlephotosgallery\languages\de\modules.php" />
+    <Compile Include="googlephotosgallery\languages\de\tl_module.php" />
+    <Compile Include="googlephotosgallery\languages\de\tl_googlephotosgallery.php" />
+    <Compile Include="googlephotosgallery\languages\de\tl_googlephotosgallery_album.php" />
+    <Compile Include="googlephotosgallery\languages\en\default.php" />
+    <Compile Include="googlephotosgallery\languages\en\modules.php" />
+    <Compile Include="googlephotosgallery\languages\en\tl_module.php" />
+    <Compile Include="googlephotosgallery\languages\en\tl_googlephotosgallery.php" />
+    <Compile Include="googlephotosgallery\languages\en\tl_googlephotosgallery_album.php" />
+    <Compile Include="googlephotosgallery\libraries\PicasaAlbum.php" />
+    <Compile Include="googlephotosgallery\libraries\PicasaAPI.php" />
+    <Compile Include="googlephotosgallery\libraries\PicasaGallery.php" />
+    <Compile Include="googlephotosgallery\libraries\PicasaImage.php" />
+    <Compile Include="googlephotosgallery\libraries\PicasaPhoto.php" />
+    <Compile Include="googlephotosgallery\modules\ModulePicasaOverview.php" />
+    <Compile Include="googlephotosgallery\modules\ModulePicasaLatest.php" />
+  </ItemGroup>
+</Project>
